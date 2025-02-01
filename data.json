@@ -1,6 +1,14 @@
-{
-      "ad": "ramazan",
-      "soyad": "yıldırım",
-      "ders_notlari": [60, 75, 85],
-      "devamsizlik": 5
-}
+[
+      {
+            "ad": "ramazan",
+            "soyad": "yildirim",
+            "ders_notlari": [60, 75, 85],
+            "devamsizlik": 5
+      },
+      {
+            "ad": "mehmet",
+            "soyad": "pektas",
+            "ders_notlari": [80, 75, 70],
+            "devamsizlik": 11
+      }
+]
