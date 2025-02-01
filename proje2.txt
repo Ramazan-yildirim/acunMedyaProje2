@@ -1,0 +1,29 @@
+=>Projenin genel amacı
+Bu program öğrencilerin not ortalaması ve devamsızlık bilgileri ile dersten kalma veya geçme durumlarına göre kullanıcıya bir mesaj veriyor.
+
+=>Algoritmanın çalışma mantığı
+Algoritmam json dosyasına yazılı olan verileri alır ardından bu verilere göre belirli kontroller yaparak kullanıcıya mesajlar verir.
+
+1- Başla
+2- JSON dosyasını aç
+3- ad, soyad, ders_notlari, devamsizlik bilgilerini al
+4- toplam_not =0 ve not_sayisi = 0
+5- eğer ders_notlari içinde 0 dan küçük değer varsa yazdır "geçersiz not girişi" yoksa devam et
+6- toplam_not += ders_notlari , not_sayisi = son notun indexi + 1
+7- ortalama = toplam_not / not_sayisi
+8- eğer devamsızlık < 0 ise yazdır "geçersiz devamsızlık girişi" ve git 12.adım değilse devam et
+9- eğer ortalama > 50 ve devamsızlık < 10 ise yazdır "{ad} {soyad} sınıfı geçti" değilse devam et
+10- eğer devamsızlık > 10 ise yazdır "{ad} {soyad} devamsızlıktan kaldı" değilse devam et
+11- eğer ortalama < 50 ise "{ad} {soyad} dersten kaldı" değilse devam et
+12- eğer başka öğrenci blgisi varsa git 3.adım yoksa devam et
+13- Bitir
+
+=>Karşılaştığım zorluklar ve çözümleri
+öğrencilerin not ve devamsızlık bilgilerinin negatif değerler girilmesi durumunda program çalışmaya devam ediyordu. bunun için ekstra if koşulları ekleyerek hata mesajları verdirdim.
+öğrencinin devamsızlıktan mı yoksa not ortalamasından mı kaldığı karışıyordu. Bunun için farklı koşullar sağlayarak farklı mesajlar verdim.
+
+
+=>Yararlandığım Kaynaklar
+ -w3 school
+ -stackoverflow
+ -chat GPT
